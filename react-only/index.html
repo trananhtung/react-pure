@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- import react cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.0/umd/react.development.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.0/umd/react-dom.development.min.js"></script>
+
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+<script>
+  // create 2 input
+  const input1 = React.createElement('input', {
+    type: 'text',
+    placeholder: 'Enter your name'
+  });
+  const input2 = React.createElement('input', {
+    type: 'text',
+    placeholder: 'Enter your age'
+  });
+  // create button
+  const button = React.createElement('button', null, 'Submit');
+  // create div
+  const div = React.createElement('div', null, input1, input2, button);
+  // render div
+  ReactDOM.render(div, document.getElementById('root'));
+
+  console.log(div);
+</script>
+
+</html>
