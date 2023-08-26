@@ -1,0 +1,21 @@
+{
+  "name": "react-babel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --presets @babel/preset-react script.js --out-file script-compiled.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.11",
+    "@babel/preset-react": "^7.22.5",
+    "babel-cli": "^6.26.0"
+  }
+}
